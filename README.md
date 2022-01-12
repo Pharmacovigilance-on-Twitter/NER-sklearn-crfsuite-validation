@@ -18,9 +18,10 @@ The IOB tagging system contains tags in the format:
 <ul>-<strong>Precision</strong> measure is an evaluation metric based on the accuracy of its positive classification, that is, from the moment something is classified as positive, this metric evaluates how many were in fact classified correctly. In this project, precision aims to assess whether the words classified as medicines were, in fact, a medicine, for example.</ul>
 <ul>-<strong>Recall</strong> measure, in turn, looks at the whole, that is, it uses the positive truth as a reference and compares it with the positive hit. In this project, the recall aims to evaluate among all the samples that really belonged to some entity (ADR or DRUG), how many of them the algorithm actually classified in the correct entity.</ul>
 <ul>-<strong>F1-score</strong> is the harmonic mean between precision and recall.</ul>
-The trained algorithm was applied to a database with approximately 9,571 thousand tweets. In this step, the built algorithm was able to identify 2,842 posts with the presence of Drug and/or ADR entities. Results: </p>
+</p>
 
-<img align="center" width='400px' src='https://user-images.githubusercontent.com/55667496/149041360-bcf3640d-dd47-415b-b21e-df586dabcf0d.png'>
+<p>Results:<br>
+<img align="center" width='400px' src='https://user-images.githubusercontent.com/55667496/149041360-bcf3640d-dd47-415b-b21e-df586dabcf0d.png'></p>
  
 #
 This is part 3 of 5 of the course completion work. Developed by <a href="https://github.com/bpaixao">Beatriz Paixão</a> and <a href="https://github.com/katheleen-gregorato">Katheleen Gregorato</a>. See our publication in CONICT - IFSP at: https://bit.ly/3IsqULo
