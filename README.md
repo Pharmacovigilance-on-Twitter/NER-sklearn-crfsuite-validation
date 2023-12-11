@@ -22,4 +22,4 @@ This CRF model makes it possible to classify previously determined entities usin
 <img align="center" width='400px' src='https://user-images.githubusercontent.com/55667496/149041360-bcf3640d-dd47-415b-b21e-df586dabcf0d.png'></p>
  
 #
-This is part 3 of 5 of the course completion work. Developed by <a href="https://github.com/bpaixao">Beatriz Paixão</a> and <a href="https://github.com/katheleen-gregorato">Katheleen Gregorato</a>. See our publication in CONICT - IFSP at: https://bit.ly/3IsqULo
+This is part 3 of 5 of the course completion work. Developed by <a href="https://github.com/bpaixao">Beatriz Paixão</a> and <a href="https://github.com/katheleen-gregorato">Katheleen Gregorato</a>. See our publication on CONICT - IFSP at: https://bit.ly/3IsqULo
