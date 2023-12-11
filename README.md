@@ -1,22 +1,20 @@
 # NER-sklearn-crfsuite-validation
- Algorithm for classifier training **sklearn-crfsuite**
+ Training algorithm for the **sklearn-crfsuite** classifier 
  
-<p>The model used for training entity recognition was the Conditional Random Fields (CRF), available in the scikit-learn set of libraries. The CRF model allows classifying the entities, previously determined, through statistical approaches and machine learning resources, which take into account the order in which the words are arranged in the posts.
-For training the CRF model, we use the generated file in Doccano (see part 2), and convert it from JSONL to IOB (also known as CONLL2003).
-This is a markup format used in tokens for grouping tasks such as named entity recognition.
-The IOB tagging system contains tags in the format: 
+<p>The model used to train entity recognition was Conditional Random Fields (CRF), available in the Scikit-learn library set. 
+This CRF model makes it possible to classify previously determined entities using statistical approaches and machine learning resources that take into account the order in which the words are arranged in the posts. In this CRF model training, we used the file generated in Doccano (see part 2), converting it from JSONL to IOB (also known as CONLL2003). A markup format used in tokens for clustering tasks, used to recognize named entities. The IOB markup system contains marks in the format: 
 <ul>B - (Beginning): for the word in the initial block;</ul>
 <ul>I - (Inside): for words inside the block; </ul>
 <ul>O - (Outside): Outside of any piece.</ul>
 <p>
 
-<p>After the transformation, we created a new collection called bio_tokens, where the tweets are separated by each word and tag, according to the IOB standard, resulting in: 
+<p>After the transformation, we created a new collection called bio_tokens, stored them in mongodb, where the tweets are separated by each word and label, according to the IOB standard, resulting in:
  <ul>I-Drug, B-Drug, I-ADR, B-ADR and O.</ul>
 </p>
 
-<p>The metrics to measure the performance of the model built in this project were:
-<ul>-<strong>Precision</strong> measure is an evaluation metric based on the accuracy of its positive classification, that is, from the moment something is classified as positive, this metric evaluates how many were in fact classified correctly. In this project, precision aims to assess whether the words classified as medicines were, in fact, a medicine, for example.</ul>
-<ul>-<strong>Recall</strong> measure, in turn, looks at the whole, that is, it uses the positive truth as a reference and compares it with the positive hit. In this project, the recall aims to evaluate among all the samples that really belonged to some entity (ADR or DRUG), how many of them the algorithm actually classified in the correct entity.</ul>
+<p>The metrics used to measure the performance of the model built in this project were:
+ <ul>-<strong>Precision</strong> (or Accuracy) metric is an evaluation metric based on the accuracy of its positive classification, i.e. from the moment something is classified as positive, this metric evaluates how many were actually classified correctly. In this project, precision aims to assess whether the words classified as medicines were, in fact, a medicine, for example. </ul>
+<ul>-<strong>Recall</strong>  measure, on the other hand, analyzes the whole, i.e. it uses the positive truth as a reference and compares it with the positive hit. In this project, recall aims to assess how many of the samples that really belonged to an entity (ADR or MEDICINE) the algorithm actually classified into the correct entity.</ul>
 <ul>-<strong>F1-score</strong> is the harmonic mean between precision and recall.</ul>
 </p>
 
